@@ -16,7 +16,7 @@ namespace Task_3
             {
                 Console.WriteLine("Введено не трехзначное число, введите трехзначное.");
             }
-            else if ((number / 100) > 10)
+            else if ((number / 100) >=10)
             {
                 Console.WriteLine("Введено не трехзначное число, введите трехзначное.");
             }
