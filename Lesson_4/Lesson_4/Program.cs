@@ -10,12 +10,13 @@ namespace Lesson_4
     {
         static void Main()
         {
-            Console.WriteLine("Введите число х:");
-            var x = double.Parse(Console.ReadLine());
-
-            var y = Func(x);
-            Console.WriteLine($"Результат вычисления f(x)={y}");
+            var z = Calc();
+            Console.WriteLine($"Результат вычисления f(x)={z}");
         }
-        static double Func(double x) => Math.Sqrt((1 + Math.Cos(x)) / (1 + x * x));    
+
+        //static double Func()=>throw new NotImplementedException();
+
+        static double Calc() => Func(2, 2) + Func(5, 3) + Func(11, 5);
+        static double Func(int x,int y) => Math.Sqrt((1 + Math.Sqrt(x)) / y);
     }
 }
