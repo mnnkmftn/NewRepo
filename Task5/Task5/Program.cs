@@ -15,6 +15,6 @@ namespace Task5
         }
         static double Calc() => Func(2, 3) + Func(3, 5) * Func(5, 7);
 
-        static double Func(int x, int y) => Math.Pow(Math.E, -(Math.Sqrt(x + y * y)));елен
+        static double Func(int x, int y) => Math.Pow(Math.E, -(Math.Sqrt(x + y * y)));
     }
 }
